@@ -81,7 +81,7 @@ header ul li:hover a {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    padding-top: 20rem;
+    padding-top: 10vh;
     margin-bottom: 10rem;
 }
 
@@ -149,10 +149,34 @@ header ul li:hover a {
     border-radius: 50%;
     background-color: #FB3B64;
     text-align: center;
+    position: relative;
+}
+
+.stats .boxes .box:nth-of-type(2) i {
+    background-color: #08A6E4;
+}
+
+.stats .boxes .box:last-of-type i {
+    background-color: #55DFB4;
 }
 
 .stats .boxes .box i::before {
-    content:
+    content: url(../img/Person.svg);
+    position: absolute;
+    right: -10px;
+}
+
+.stats .boxes .box:nth-of-type(2) i::before {
+    content: url(../img/Eye.svg);
+    top: 10px;
+    right: -20px;
+}
+
+.stats .boxes .box:last-of-type i::before {
+    content: url(../img/Catalog.svg);
+    position: absolute;
+    right: -20px;
+    top: 5px;
 }
 
 .stats .boxes .box h3 {
