@@ -19,6 +19,11 @@ body {
     margin: 0 auto;
 }
 
+a,
+button {
+    cursor: pointer;
+}
+
 ul {
     list-style: none;
 }
@@ -192,7 +197,6 @@ header ul li:hover a {
 .about {
     width: 100%;
     background-color: #F7F7F7;
-
 }
 
 .about .container {
@@ -455,4 +459,173 @@ header ul li:hover a {
 
 .pricing .pricing--offers .box--offer:last-of-type button {
     background-color: #55DFB4;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 90rem;
+    margin: 5rem auto 10rem auto;
+}
+
+.contact .contact--contactdata {
+    width: 40%;
+    margin-right: 10rem;
+}
+
+.contact .contact--contactdata h3 {
+    font-size: 4.9rem;
+    line-height: 5.7rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+.contact .contact--contactdata p {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    margin: 2rem 0 4rem 0;
+}
+
+.contact .contact--contactdata .contact--contactdata__contactbox {
+    display: flex;
+    align-items: center;
+}
+
+.contact .contact--contactdata .contact--contactdata__contactbox span {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    color: #A5A5A5;
+    display: flex;
+    align-items: center;
+}
+
+.contact .contact--contactdata .contact--contactdata__contactbox span:first-of-type {
+    margin-right: 2rem;
+}
+
+.contact .contact--contactdata .contact--contactdata__contactbox span:first-of-type:before {
+    content: url(../img/Mail\ Icon.svg);
+    margin-right: 1rem;
+}
+
+.contact .contact--contactdata .contact--contactdata__contactbox span:nth-of-type(2):before {
+    content: url(../img/Phone\ Icon.svg);
+    margin-right: 1rem;
+}
+
+.contact .contact--form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .contact--form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .contact--form form label {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    color: #08A6E4;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+.contact .contact--form form input {
+    border: none;
+    border-bottom: 1px solid #95989A;
+    margin: 3rem 0;
+}
+
+.contact .contact--form .contact--form__regulations {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.contact .contact--form .contact--form__regulations input[type="checkbox"] {
+    display: none;
+}
+
+.contact .contact--form .contact--form__regulations input[type="checkbox"]+label span {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid #95989A;
+    border-radius: .4rem;
+}
+
+.contact .contact--form .contact--form__regulations input[type="checkbox"]:checked+label span {
+    background: url(../img/Checkmark.svg) center center no-repeat;
+}
+
+.contact .contact--form .contact--form__regulations p {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    color: #707070;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    margin-left: 1rem;
+}
+
+.contact .contact--form>input {
+    background-color: #08A6E4;
+    border-radius: 3.5rem;
+    box-shadow: .5rem 1rem 1.4rem #07ACE629;
+    padding: 2rem 10rem;
+    color: white;
+    cursor: pointer;
+    border: none;
+    margin-top: 2rem;
+    align-self: flex-end;
+}
+
+.contact .contact--form>input:focus {
+    outline: none;
+    box-shadow: .5rem .5rem .5rem #08A6E4;
+}
+
+footer {
+    box-shadow: 0 -.5rem 4rem #00000029;
+}
+
+footer .container {
+    width: 1600px;
+    height: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .container .copyright {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer .container .copyright a {
+    font-size: 2.6rem;
+    line-height: 3rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    color: #08A6E4;
+    margin-bottom: 1rem;
+}
+
+footer .container .copyright span {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #A5A5A5;
+}
+
+footer .container .media a {
+    margin: 0 1rem;
 }
